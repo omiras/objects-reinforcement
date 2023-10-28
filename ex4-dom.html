@@ -71,7 +71,12 @@
 
         // 1. Muestra por consola el precio del plan "PREMIUM". Deberíamos observar '$ 50'
 
-        // 2. Modifica por JavaScript el nombre del plan "Pro". Cambialo por el texto "Pro - Recommended"
+        // 2. Modifica por JavaScript el nombre del plan "Pro". Cambialo por el texto que aparece en el objeto "plans" para el plan "pro"
+        const plans = {
+            basic: "Basic",
+            pro: "Pro - Recommended",
+            premium: "Premium"
+        }
 
         // 3. Está página tiene una triquiñuela. Tras pasados 10 segundos, actualiza el precio del plan Pro a $ 20 para convencer al usuario y que tome el plan. Modifica la línea 79 con el valor adecuado para la propiedad .innerHTML para obtener el resultado esperado. No te precoupes por la función setTimeout, tan solo modifica la línea indicada.
         setTimeout(function () {
