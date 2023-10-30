@@ -75,5 +75,6 @@ const users = [
 ];
 
 /**
- * Recorre el array de usuarios y encuentra aquél usuario que tiene más 'skills' de todos
+ * Recorre el array de usuarios y encuentra aquél usuario que tiene más 'skills' de todos.
+ * El resultado de tu búsqueda debería ser Asab.
  */
