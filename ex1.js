@@ -48,9 +48,12 @@ const flightReservation = {
   gate: "B15",
 };
 
-console.log(flightReservation);
+//console.log(flightReservation);
 
 // Observa el resultado de la consola. Escribe un console.log para cada uno de los apartados
+
+// 0. Muestra la puerta de embarque
+console.log("Puerta de embarque: ", flightReservation.gate);
 
 // 1. Muestra el número de vuelo
 

@@ -51,6 +51,10 @@ const flightReservation = {
 // Aplica las siguientes MODIFICACIONES al objeto flightReservation. Para cada apartado, se necesita una línea de JavaScript que modifique la propiedad adecuada
 // Cada vez que modifiques una propiedad, comprueba el resultado mediante `node ex2.js`
 
+// 0. Nos han modificado la puerta de embarque, a la C77
+flightReservation.gate = "C77";
+console.log("Nueva puerta de embarque: ", flightReservation.gate);
+
 // 1. El vuelo se ha retrasado. Modifica la propiedad flightStatus a "Delayed"
 
 // 2. Como compensación del restraso, nos han cambiado el ticket a 'First Class'
@@ -61,4 +65,4 @@ const flightReservation = {
 
 // 5. Por el retraso del avión nos van a aplicar un 15% de descuento sobre el precio del billete. Actualiza el precio total del billete con el nuevo valor, pero mantén el formato! totalPrice: '$999.99'
 
-console.log(flightReservation);
+//console.log(flightReservation);
