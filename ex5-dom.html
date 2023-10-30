@@ -64,9 +64,24 @@
 <script>
     // Añade los ids que necesites. Rellena el formulario con alguna información, al menos los dos primeros campos
 
-    // 1. Al hacer clic en el botón de submit, muestra por consola el valor del campo de First Name
-    // 2. Al hacer clic en el botón de submit, muestra por consola el valor del campo de Last Name
-    // 3. Al ahcer clic en el botón de submit, modifica el valor del último input con un mensaje saludando a la persona. Algo así como "Hello First Name Second Name!";
+    // Al hacer clic en el botón de submit:
+
+    // 1. Guarda en una variable  el valor del campo de First Name
+    //  2. Guarda en otra variable el valor del campo de Last Name
+    // 3. Modifica el valor del último input con un mensaje saludando a la persona. Algo así como "Hello First Name Second Name!";
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', function (event) {
+
+        event.preventDefault();
+
+        const firstName = document.querySelector('input[name=first]').value;
+        const lastName = document.querySelector('input[name=last]').value;
+
+        document.querySelector('input[name=greetings]').value = `Hello ${firstName} ${lastName}!`;
+
+    });
+
 </script>
 
 </html>
