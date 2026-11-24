@@ -14,7 +14,7 @@
       <section aria-labelledby="teoria"><h2 id="teoria">Antes de empezar</h2><p>Recorre el array y compara la longitud de skills de cada usuario.</p><pre><code>const personas = [{ nombre: "Ana", skills: ["HTML"] }];
 console.log(personas[0].skills.length); // 1</code></pre></section>
       <section aria-labelledby="practica"><h2 id="practica">Tu turno</h2><p>Abre la consola del navegador (<strong>F12 → Consola</strong>).</p><p>Encuentra el usuario con más habilidades y muéstralo con console.log. Puedes mostrar el objeto completo o su nombre.</p><p>Edita el último <code>&lt;script&gt;</code>, guarda el archivo y recarga la página.</p></section>
-      <section aria-labelledby="esperado"><h2 id="esperado">Resultado esperado</h2><pre>Asab</pre></section>
+      <section aria-labelledby="esperado"><h2 id="esperado">Resultado esperado</h2><pre>Usuario con más habilidades: Asab</pre></section>
       <section aria-labelledby="pruebas"><h2 id="pruebas">Comprueba tu solución</h2><p>Guarda el archivo y recarga la página. Cada prueba muestra el resultado esperado y el obtenido.</p><p id="resumen" aria-live="polite"></p><ul id="resultados" aria-live="polite"></ul></section>
     </main>
     <script>
@@ -104,7 +104,7 @@ for (const user of users) {
     usuarioConMasSkills = user;
   }
 }
-console.log(usuarioConMasSkills.name);
+console.log("Usuario con más habilidades:", usuarioConMasSkills.name);
 
     </script>
   </body>

@@ -15,11 +15,11 @@
 vuelo.estado = "Delayed";</code></pre></section>
       <section aria-labelledby="practica"><h2 id="practica">Tu turno</h2><p>Abre la consola del navegador (<strong>F12 → Consola</strong>).</p><p>Completa los apartados 1 a 5. El precio original es $450.00: aplica un 15 % de descuento y conserva dos decimales.</p><p>Edita el último <code>&lt;script&gt;</code>, guarda el archivo y recarga la página.</p></section>
       <section aria-labelledby="esperado"><h2 id="esperado">Resultado esperado</h2><pre>Nueva puerta de embarque: C77
-Delayed
-First Class
-9:30 AM
-Vegan
-$382.50</pre></section>
+Estado del vuelo: Delayed
+Clase del billete: First Class
+Hora de salida: 9:30 AM
+Nueva comida especial: Vegan
+Precio con descuento: $382.50</pre></section>
       <section aria-labelledby="pruebas"><h2 id="pruebas">Comprueba tu solución</h2><p>Guarda el archivo y recarga la página. Cada prueba muestra el resultado esperado y el obtenido.</p><p id="resumen" aria-live="polite"></p><ul id="resultados" aria-live="polite"></ul></section>
     </main>
     <script>
@@ -82,23 +82,23 @@ console.log("Nueva puerta de embarque: ", flightReservation.gate);
 
 // 1. El vuelo se ha retrasado. Modifica la propiedad flightStatus a "Delayed"
 flightReservation.flightStatus = "Delayed";
-console.log(flightReservation.flightStatus);
+console.log("Estado del vuelo:", flightReservation.flightStatus);
 
 // 2. Como compensación del restraso, nos han cambiado el ticket a 'First Class'
 flightReservation.ticketClass = "First Class";
-console.log(flightReservation.ticketClass);
+console.log("Clase del billete:", flightReservation.ticketClass);
 
 // 3. Como consequencia del retraso, ahora la hora estimada de salida es 9:30 AM. Modifica la propiedad adecuada
 flightReservation.departure.time = "9:30 AM";
-console.log(flightReservation.departure.time);
+console.log("Hora de salida:", flightReservation.departure.time);
 
 // 4. Acaban de actualizar los tipos de comidas especiales que sirven en el avión. Añade la opción "Vegan"
 flightReservation.specialMeals.push("Vegan");
-console.log(flightReservation.specialMeals[flightReservation.specialMeals.length - 1]);
+console.log("Nueva comida especial:", flightReservation.specialMeals[flightReservation.specialMeals.length - 1]);
 
 // 5. Por el retraso del avión nos van a aplicar un 15% de descuento sobre el precio del billete. Actualiza el precio total del billete con el nuevo valor, pero mantén el formato! totalPrice: '$999.99'
 flightReservation.totalPrice = "$" + (parseFloat(flightReservation.totalPrice.slice(1)) * 0.85).toFixed(2);
-console.log(flightReservation.totalPrice);
+console.log("Precio con descuento:", flightReservation.totalPrice);
 
 
 
