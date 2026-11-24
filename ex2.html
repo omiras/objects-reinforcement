@@ -1,3 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 · Modificar una reserva</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="captura-consola.js"></script>
+    <script src="pruebas.js" defer></script>
+  </head>
+  <body data-ejercicio="ex2">
+    <main class="lesson">
+      <header><h1>Ejercicio 2 · Modificar una reserva</h1></header>
+      <section aria-labelledby="teoria"><h2 id="teoria">Antes de empezar</h2><p>Asigna un nuevo valor con objeto.propiedad = valor. Para añadir a un array, utiliza push().</p><pre><code>const vuelo = { estado: "On time" };
+vuelo.estado = "Delayed";</code></pre></section>
+      <section aria-labelledby="practica"><h2 id="practica">Tu turno</h2><p>Abre la consola del navegador (<strong>F12 → Consola</strong>).</p><p>Completa los apartados 1 a 5. El precio original es $450.00: aplica un 15 % de descuento y conserva dos decimales.</p><p>Edita el último <code>&lt;script&gt;</code>, guarda el archivo y recarga la página.</p></section>
+      <section aria-labelledby="esperado"><h2 id="esperado">Resultado esperado</h2><pre>Nueva puerta de embarque: C77
+Delayed
+First Class
+9:30 AM
+Vegan
+$382.50</pre></section>
+      <section aria-labelledby="pruebas"><h2 id="pruebas">Comprueba tu solución</h2><p>Guarda el archivo y recarga la página. Cada prueba muestra el resultado esperado y el obtenido.</p><p id="resumen" aria-live="polite"></p><ul id="resultados" aria-live="polite"></ul></section>
+    </main>
+    <script>
 const flightReservation = {
   flightNumber: "AC123",
   airline: "Air Canada",
@@ -49,7 +74,7 @@ const flightReservation = {
 };
 
 // Aplica las siguientes MODIFICACIONES al objeto flightReservation. Para cada apartado, se necesita una línea de JavaScript que modifique la propiedad adecuada
-// Cada vez que modifiques una propiedad, comprueba el resultado mediante `node ex2.js`
+// Después de modificar una propiedad, guarda el HTML y recarga la página.
 
 // 0. Nos han modificado la puerta de embarque, a la C77
 flightReservation.gate = "C77";
@@ -65,4 +90,8 @@ console.log("Nueva puerta de embarque: ", flightReservation.gate);
 
 // 5. Por el retraso del avión nos van a aplicar un 15% de descuento sobre el precio del billete. Actualiza el precio total del billete con el nuevo valor, pero mantén el formato! totalPrice: '$999.99'
 
-//console.log(flightReservation);
+
+
+    </script>
+  </body>
+</html>

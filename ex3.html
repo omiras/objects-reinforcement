@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 · Buscar el usuario con más habilidades</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="captura-consola.js"></script>
+    <script src="pruebas.js" defer></script>
+  </head>
+  <body data-ejercicio="ex3">
+    <main class="lesson">
+      <header><h1>Ejercicio 3 · Buscar el usuario con más habilidades</h1></header>
+      <section aria-labelledby="teoria"><h2 id="teoria">Antes de empezar</h2><p>Recorre el array y compara la longitud de skills de cada usuario.</p><pre><code>const personas = [{ nombre: "Ana", skills: ["HTML"] }];
+console.log(personas[0].skills.length); // 1</code></pre></section>
+      <section aria-labelledby="practica"><h2 id="practica">Tu turno</h2><p>Abre la consola del navegador (<strong>F12 → Consola</strong>).</p><p>Encuentra el usuario con más habilidades y muéstralo con console.log. Puedes mostrar el objeto completo o su nombre.</p><p>Edita el último <code>&lt;script&gt;</code>, guarda el archivo y recarga la página.</p></section>
+      <section aria-labelledby="esperado"><h2 id="esperado">Resultado esperado</h2><pre>Asab</pre></section>
+      <section aria-labelledby="pruebas"><h2 id="pruebas">Comprueba tu solución</h2><p>Guarda el archivo y recarga la página. Cada prueba muestra el resultado esperado y el obtenido.</p><p id="resumen" aria-live="polite"></p><ul id="resultados" aria-live="polite"></ul></section>
+    </main>
+    <script>
+const users = [
+  {
+    email: "alex@alex.com",
+    skills: ["HTML", "CSS", "JavaScript"],
+    age: 20,
+    isLoggedIn: false,
+    points: 30,
+    name: "Alex",
+  },
+  {
+    email: "asab@asab.com",
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Redux",
+      "MongoDB",
+      "Express",
+      "React",
+      "Node",
+    ],
+    age: 25,
+    isLoggedIn: false,
+    points: 50,
+    name: "Asab",
+  },
+  {
+    email: "daniel@daniel.com",
+    skills: ["HTML", "CSS", "JavaScript", "React", "Redux"],
+    age: 30,
+    isLoggedIn: true,
+    points: 50,
+    name: "Brook",
+  },
+  {
+    email: "daniel@alex.com",
+    skills: ["HTML", "CSS", "JavaScript", "Python"],
+    age: 20,
+    isLoggedIn: false,
+    points: 40,
+    name: "Daniel",
+  },
+  {
+    email: "john@john.com",
+    skills: ["HTML", "CSS", "JavaScript", "React", "Redux", "Node.js"],
+    age: 20,
+    isLoggedIn: true,
+    points: 50,
+    name: "John",
+  },
+  {
+    email: "thomas@thomas.com",
+    skills: ["HTML", "CSS", "JavaScript", "React"],
+    age: 20,
+    isLoggedIn: false,
+    points: 40,
+    name: "Thomas",
+  },
+  {
+    email: "paul@paul.com",
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "MongoDB",
+      "Express",
+      "React",
+      "Node",
+    ],
+    age: 20,
+    isLoggedIn: false,
+    points: 40,
+    name: "Paul",
+  },
+];
+
+/**
+ * Recorre el array de usuarios y encuentra aquél usuario que tiene más 'skills' de todos.
+ * El resultado de tu búsqueda debería ser Asab.
+ */
+
+    </script>
+  </body>
+</html>
