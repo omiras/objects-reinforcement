@@ -19,6 +19,7 @@ const ejercicios = {
   ex2: [
     { caso: "Puerta", esperado: "C77", ejecutar: () => flightReservation.gate },
     { caso: "Estado del vuelo", esperado: "Delayed", ejecutar: () => flightReservation.flightStatus },
+    { caso: "Estado del vuelo mostrado en consola", esperado: "Delayed", ejecutar: () => logs.find(valores => valores.at(-1) === "Delayed")?.at(-1) },
     { caso: "Clase", esperado: "First Class", ejecutar: () => flightReservation.ticketClass },
     { caso: "Hora de salida", esperado: "9:30 AM", ejecutar: () => flightReservation.departure.time },
     { caso: "Comida vegana", esperado: true, ejecutar: () => flightReservation.specialMeals.includes("Vegan") },
