@@ -22,7 +22,15 @@ const ejercicios = {
     { caso: "Estado del vuelo mostrado en consola", esperado: "Delayed", ejecutar: () => logs.find(valores => valores.at(-1) === "Delayed")?.at(-1) },
     { caso: "Clase", esperado: "First Class", ejecutar: () => flightReservation.ticketClass },
     { caso: "Hora de salida", esperado: "9:30 AM", ejecutar: () => flightReservation.departure.time },
-    { caso: "Comida vegana", esperado: true, ejecutar: () => flightReservation.specialMeals.includes("Vegan") },
+    {
+      caso: "Comidas especiales",
+      esperado: { cantidad: 3, incluyeVegan: true },
+      ejecutar: () => {
+        const comidas = flightReservation.specialMeals;
+        if (!Array.isArray(comidas)) return comidas;
+        return { cantidad: comidas.length, incluyeVegan: comidas.includes("Vegan") };
+      }
+    },
     { caso: "Precio con 15 % de descuento", esperado: "$382.50", ejecutar: () => flightReservation.totalPrice }
   ],
   ex3: [{ caso: "Usuario con más habilidades", esperado: "Asab", ejecutar: () => logs.at(-1)?.at(-1)?.name ?? logs.at(-1)?.at(-1) }]
